@@ -1,5 +1,4 @@
 package com.company.project.dubbo.impl;
-
 import com.company.project.module.SysUser;
 import com.company.project.remote.UserDubboService;
 import com.company.project.service.SysUserService;
@@ -10,7 +9,7 @@ import org.springframework.stereotype.Service;
 /**
  * Created by localadmin on 2017/11/28.
  */
-@Service
+@Service("userDubboService")
 public class UserDubboServiceImpl implements UserDubboService {
 
     @Autowired
