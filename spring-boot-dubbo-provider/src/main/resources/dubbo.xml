@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <dubbo:application  name="dubbo-provider" owner="dubbo-provider"/>
-    <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" client="zkclient"/>
+    <dubbo:registry protocol="zookeeper" address="my.self.com:2181" client="zkclient"/>
     <dubbo:protocol name="dubbo" port="-1"/>
    <!-- <dubbo: lazy="true" check="false" timeout="30000"/>-->
     <dubbo:service  interface="com.company.project.remote.UserDubboService" ref="userDubboService" timeout="30000"/>
