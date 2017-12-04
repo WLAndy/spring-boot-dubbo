@@ -8,6 +8,7 @@
     <dubbo:protocol name="dubbo" port="-1"/>
     <dubbo:monitor protocol="registry"/>
     <!--<dubbo: lazy="true" check="false" timeout="30000"/>-->
+    <dubbo:consumer check="false"/>
 
 
 
